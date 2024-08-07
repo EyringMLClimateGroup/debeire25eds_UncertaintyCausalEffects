@@ -53,8 +53,8 @@ Once the synthetic data have been generated and saved in the *./results/* folder
 ### Second numerical experiment: generating synthetic data and computation of Confidence intervals 
 
 The different methods to build Confidence Intervals are benchmarked with synthetic data generated:
-- to produce the average confidence interval sizes over different SAVAR models use 'sbatch sbatch_mpi_allseeds.sh' which embarassingly parallelize the bootstrap-based methods.
-- to produce the confidence interval sizes for one SAVAR model (associated with a seed), use 'sbatch sbatch_mpi_1seed.sh' which embarassingly parallelize the bootstrap-based methods.
+- to produce the average confidence interval sizes over different SAVAR models use 'sbatch sbatch_mpi_allseeds.sh' which will embarassingly parallelize the bootstrap-based methods.
+- to produce the confidence interval sizes for one SAVAR model (associated with a seed), use 'sbatch sbatch_mpi_1seed.sh' which will embarassingly parallelize the bootstrap-based methods.
 
 ### Second numerical experiment: plotting figures
 The results of the previous stage are saved in *./results/*. To display the figure which will be saved in *./plots/ci/*:
