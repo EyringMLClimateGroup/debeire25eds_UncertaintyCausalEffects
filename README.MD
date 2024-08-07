@@ -49,7 +49,7 @@ python setup.py install
 
 Find below the instructions to produce the **figures** of the main text and of the appendix for the two numerical experiments.
 
-Note: you can modify and provide new methods for Dimension reduction, Causal discovery and Linear coefficient estimation that you want to benchmark for estimation sensitivity and long-run effects. For this purpose, please add the desired algorithm in the appropriate python file *DimensionReduction.py*, *CausalDiscovery.py* or *LinCoeffEstimation.py* as a subclass of the main class. Take care that you provide the required attributes and methods. The benchmark will then automatically include your new subclass. All combination of DimensionReduction, Causal Discovery and LinearCoefficient will be tested.
+**Note**: you can modify and provide new methods for Dimension reduction, Causal discovery and Linear coefficient estimation that you want to benchmark to estimate sensitivity and long-run effects. For this purpose, please add the desired methods in the appropriate python file *DimensionReduction.py*, *CausalDiscovery.py* or *LinCoeffEstimation.py* as a subclass of the main class. Take care that you provide the required attributes and methods. The benchmark will then automatically include your new subclass. All combination of DimensionReduction, Causal Discovery and LinearCoefficient will be tested during the benchmark.
 
 ### First numerical experiment: generating data and benchmarking
 
