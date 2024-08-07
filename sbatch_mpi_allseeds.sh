@@ -12,5 +12,5 @@
 module load gcc #load GCC compiler
 export I_MPI_PMI=pmi2 #mpi with PMI-2 API, adjust if neeeded
 export I_MPI_PMI_LIBRARY=/usr/lib64/libpmi2.so #mpi with PMI-2 API, adjust if neeeded
-srun --mpi=pmi2 -n $SLURM_NTASKS python -u run_confidenceinterval_allseeds.py
+srun --mpi=pmi2 -n $SLURM_NTASKS python -u run_confidence_interval_allseeds.py
 echo "done!"
