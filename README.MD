@@ -81,6 +81,6 @@ The results of the previous stage are saved in *./results/*. To display the figu
 
 For this experiment, we provide the following curated dataset:
 - economic time series in *./data/eco_data/* 
-- air pollution data in *./data/ Po_valley_results/*
+- air pollution data in *./data/Po_valley_results/*
 
 The analysis and figures of the paper can be reproduced by running the 'plot_results_NO2_application.ipynb' Jupyter notebook.
