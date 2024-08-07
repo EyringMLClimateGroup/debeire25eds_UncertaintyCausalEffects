@@ -5,13 +5,23 @@ In this folder, you can find the official implementation of the numerical experi
 
 ## Requirements
 
-First **setup a conda environment** (by default called bagged_pcmci) from the [environment.yml](./environment.yml) file:
+First **setup a conda environment** (by default called lte_env) from the [environment.yml](./environment.yml) file:
 
 ```setup
 conda env create -f environment.yml
 ```
 
 **Activate** this environment.
+
+```
+conda activate lte_env
+```
+
+We use the [SAVAR](https://github.com/xtibau/savar.git) package to generate the synthetic SAVAR data. Follow the instructions to install the SAVAR package.
+
+```
+pip install git+https://github.com/xtibau/savar.git#egg=savar
+```
 
 The PCMCI method is implemented in the [TIGRAMITE](https://github.com/jakobrunge/tigramite/) package. Follow the instructions below to install TIGRAMITE.
 
