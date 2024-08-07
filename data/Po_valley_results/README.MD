@@ -8,7 +8,7 @@ P A T H T O T H E D A T A S E T
 -  ./data/Po_valley_results/
 
 O W N E R / P R O D U C E R O F T H E D A T A S E T
-- Renée Bichler
+- Renée Bichler and Deutsches Zentrum fuer Luft- und Raumfahrt e. V., D-51170 Koeln
 
 D A T A U S A G E L I C E N S E
 - See LICENSE File in this directory
