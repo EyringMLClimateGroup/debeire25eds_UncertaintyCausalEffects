@@ -1,7 +1,7 @@
 # Uncertainty bounds for long-term causal effects of perturbations in spatio-temporal systems
 
 In this folder, you can find the official implementation of the numerical experiments of the paper:
-> Kevin Debeire, Andreas Gerhardus, Renée Bichler, Jakob Runge and Veronika Eyring (2024). Uncertainty bounds for long-term causal effects of perturbations in spatio-temporal systems
+> Debeire, K., Gerhardus, A., Bichler, R., Runge, J., & Eyring, V. (2024). Uncertainty bounds for long-term causal effects of perturbations in spatio-temporal systems.
 
 First **setup a conda environment** (by default called bagged_pcmci) from the [environment.yml](./environment.yml) file:
 
