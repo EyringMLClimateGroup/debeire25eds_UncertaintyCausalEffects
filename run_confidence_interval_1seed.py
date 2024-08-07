@@ -431,14 +431,14 @@ if __name__=="__main__":
             for col in df_res_low2.columns:
                 df_res_low2[col]= - df_res_spread2[col]/2. + df_res_est2.Estimated
                 df_res_up2[col]= + df_res_spread2[col]/2. + df_res_est2.Estimated
-            df_res_low2.to_pickle("./results/conf_int_seed%d_%s_low.pkl"%(arg_seed,causalmet))
-            df_res_up2.to_pickle("./results/conf_int_seed%d_%s_up.pkl"%(arg_seed,causalmet))
-            df_res_est2.to_pickle("./results/conf_int_seed%d_%s_est.pkl"%(arg_seed,causalmet))
+            df_res_low2.to_pickle("./output/conf_int_seed%d_%s_low.pkl"%(arg_seed,causalmet))
+            df_res_up2.to_pickle("./output/conf_int_seed%d_%s_up.pkl"%(arg_seed,causalmet))
+            df_res_est2.to_pickle("./output/conf_int_seed%d_%s_est.pkl"%(arg_seed,causalmet))
     else:
         if rank== 0:
-            df_res_low2 = pd.read_pickle("./results/conf_int_seed%d_%s_low.pkl"%(arg_seed,causalmet))
-            df_res_up2 = pd.read_pickle("./results/conf_int_seed%d_%s_up.pkl"%(arg_seed,causalmet))
-            df_res_est2 = pd.read_pickle("./results/conf_int_seed%d_%s_est.pkl"%(arg_seed,causalmet))
+            df_res_low2 = pd.read_pickle("./output/conf_int_seed%d_%s_low.pkl"%(arg_seed,causalmet))
+            df_res_up2 = pd.read_pickle("./output/conf_int_seed%d_%s_up.pkl"%(arg_seed,causalmet))
+            df_res_est2 = pd.read_pickle("./output/conf_int_seed%d_%s_est.pkl"%(arg_seed,causalmet))
     if rank == 0:
         plot_results(df_res_up2.iloc[4:,:],df_res_low2.iloc[4:,:],df_res_est2.iloc[4:,:],varying_parameter,"Sensitivity","./plots/ci/ci_seed%d_%s.pdf"%(arg_seed,causalmet))
         plot_results(df_res_up2.iloc[:6,:],df_res_low2.iloc[:6,:],df_res_est2.iloc[:6,:],varying_parameter,"Sensitivity","./plots/ci/ci_seed%d_%s_smallsample.pdf"%(arg_seed,causalmet))

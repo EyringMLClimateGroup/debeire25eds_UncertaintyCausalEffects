@@ -407,8 +407,8 @@ if __name__=='__main__':
 
     df_res_spread,df_res_est,df_res_ci,df_res_spread_std, df_res_est_std  = compare_confidence_interval_allseeds(0.1,nprocs,"T",value_range,seed_list,1,causalmet,linmed)
     if rank ==0:
-        df_res_spread.to_csv("./results/confidence_interval_spread_%s_%s_%d-%d.csv"%(causalmet,linmed,value_range[0],value_range[-1]))
-        df_res_est.to_csv("./results/confidence_interval_mae_%s_%s_%d-%d.csv"%(causalmet,linmed,value_range[0],value_range[-1]))
-        df_res_ci.to_csv("./results/confidence_interval_cirate_%s_%s_%d-%d.csv"%(causalmet,linmed,value_range[0],value_range[-1]))
-        df_res_spread_std.to_csv("./results/confidence_interval_spread_std_%s_%s_%d-%d.csv"%(causalmet,linmed,value_range[0],value_range[-1]))
-        df_res_est_std.to_csv("./results/confidence_interval_mae_std_%s_%s_%d-%d.csv"%(causalmet,linmed,value_range[0],value_range[-1]))
+        df_res_spread.to_csv("./output/confidence_interval_spread_%s_%s_%d-%d.csv"%(causalmet,linmed,value_range[0],value_range[-1]))
+        df_res_est.to_csv("./output/confidence_interval_mae_%s_%s_%d-%d.csv"%(causalmet,linmed,value_range[0],value_range[-1]))
+        df_res_ci.to_csv("./output/confidence_interval_cirate_%s_%s_%d-%d.csv"%(causalmet,linmed,value_range[0],value_range[-1]))
+        df_res_spread_std.to_csv("./output/confidence_interval_spread_std_%s_%s_%d-%d.csv"%(causalmet,linmed,value_range[0],value_range[-1]))
+        df_res_est_std.to_csv("./output/confidence_interval_mae_std_%s_%s_%d-%d.csv"%(causalmet,linmed,value_range[0],value_range[-1]))
