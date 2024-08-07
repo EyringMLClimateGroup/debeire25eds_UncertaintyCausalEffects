@@ -23,12 +23,18 @@ We use the [SAVAR](https://github.com/xtibau/savar.git) package to generate the 
 pip install git+https://github.com/xtibau/savar.git#egg=savar
 ```
 
-The PCMCI method is implemented in the [TIGRAMITE](https://github.com/jakobrunge/tigramite/) package. Follow the instructions below to install TIGRAMITE.
+The PCMCI method is implemented in the [TIGRAMITE](https://github.com/jakobrunge/tigramite/) package. Follow the instructions below to install TIGRAMITE. 
 
 First clone the TIGRAMITE repository:
 
 ```
 git clone https://github.com/jakobrunge/tigramite.git
+```
+
+Then point to this specific commit for consistency:
+
+```
+git reset --hard e9fe9db30a22d13761420be3c8f296306bc63534
 ```
 
 Then install TIGRAMITE:
