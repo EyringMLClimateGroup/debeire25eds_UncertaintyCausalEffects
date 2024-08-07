@@ -63,7 +63,7 @@ To generate the synthetic data and to benchmark the methods:
 
 ### First numerical experiment: plotting benchmark figures
 Once the synthetic data have been generated and saved in the *./results/* folder :
-- you can produce the figures in the 'plot_benchmark_sens_err.ipynb' Jupyter notebook.
+- you can produce the figures in the [plot_benchmark_sens_err.ipynb](./plot_benchmark_sens_err.ipynb) Jupyter notebook.
 - the figures are saved in './plots/benchmark/sens_err/' that you may need to create
 
 ### Second numerical experiment: generating synthetic data and computation of Confidence intervals 
@@ -74,8 +74,8 @@ The different methods to build Confidence Intervals are benchmarked with synthet
 
 ### Second numerical experiment: plotting figures
 The results of the previous stage are saved in *./results/*. To display the figure which will be saved in *./plots/ci/*:
-- run the 'plot_confidence_interval_allseeds.ipynb' Jupyter notebook for the experiment with  average confidence interval sizes over different SAVAR models.
-- run the 'plot_confidence_interval_1seed.ipynb' Jupyter notebook for the experiment with confidence interval sizes for one SAVAR model (associated with a seed).
+- run the [plot_confidence_interval_allseeds.ipynb](./plot_confidence_interval_allseeds.ipynb) Jupyter notebook for the experiment with  average confidence interval sizes over different SAVAR models.
+- run the [plot_confidence_interval_1seed.ipynb](./plot_confidence_interval_1seed.ipynb)Jupyter notebook for the experiment with confidence interval sizes for one SAVAR model (associated with a seed).
 
 ## Real-world application: Air pollution in Northern Italy.
 
@@ -83,4 +83,4 @@ For this experiment, we provide the following curated dataset:
 - economic time series in *./data/eco_data/* 
 - air pollution data in *./data/Po_valley_results/*
 
-The analysis and figures of the paper can be reproduced by running the 'plot_results_NO2_application.ipynb' Jupyter notebook.
+The analysis and figures of the paper can be reproduced by running the [plot_results_NO2_application.ipynb](./plot_results_NO2_application.ipynb) Jupyter notebook.
