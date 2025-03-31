@@ -2,6 +2,7 @@
 
 In this folder, you can find the official implementation of the numerical experiments and application of the paper:
 > Debeire, K., Gerhardus, A., Bichler, R., Runge, J., & Eyring, V. (2024). Uncertainty bounds for long-term causal effects of perturbations in spatio-temporal systems.
+[![DOI](https://zenodo.org/badge/957902120.svg)](https://zenodo.org/badge/latestdoi/957902120)
 
 ## Requirements
 
